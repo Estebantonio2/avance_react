@@ -1,6 +1,6 @@
 const Footer = () => {
     return <div>
-        Footer
+        Programacion Web 2025-0
     </div>
 }
 
