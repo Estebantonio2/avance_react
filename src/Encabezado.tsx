@@ -1,6 +1,5 @@
 const Encabezado = () => {
-    return 
-    <div>
+    return <div>
         Encabezado
     </div>
 }

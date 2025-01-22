@@ -1,6 +1,5 @@
 const ListaTODOs = () => {
-    return 
-    <div>
+    return <div>
         ListaTODOs
     </div>
 }

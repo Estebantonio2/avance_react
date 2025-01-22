@@ -1,6 +1,5 @@
 const FormularioTODO = () => {
-    return 
-    <div>
+    return <div>
         FormularioTODO
     </div>
 }
