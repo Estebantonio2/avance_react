@@ -5,11 +5,11 @@ interface ListaTODOsProps {
 }
 
 const ListaTODOs = (props: ListaTODOsProps) => {
-    return <section>
-        <ul id="todos">
+    return <section className="mt-2">
+        <ul className="list-group" id="todos">
             {
                 props.lista.map((item: TODO) => {
-                    return <li>{item.descripcion}</li>
+                    return <li className="list-group-item" >{item.descripcion}</li>
                 })
             }
         </ul>

@@ -20,7 +20,7 @@ const TodoPage = () => {
             fecha: new Date()
         }
     ]
-    return <div>
+    return <div className="container">
         <Encabezado titulo={nombreApp}/>
         <FormularioTODO />
         <ListaTODOs lista={listaPorHacer}/>
