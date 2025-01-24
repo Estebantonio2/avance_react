@@ -1,15 +1,18 @@
 import { TODO } from "./TodoPage";
 
 interface ListaTODOsProps {
-    lista: TODO[]
+    lista: TODO[],
+    onEliminarTODO: (indice: number) => void;
 }
 
 const ListaTODOs = (props: ListaTODOsProps) => {
     return <section className="mt-2">
         <ul className="list-group" id="todos">
             {
-                props.lista.map((item: TODO) => {
-                    return <li className="list-group-item" >{item.descripcion}</li>
+                props.lista.map((item: TODO, indice: number) => {
+                    return <li className="list-group-item" onClick={() => {
+                        props.onEliminarTODO(indice);
+                    }}>{item.descripcion}</li>
                 })
             }
         </ul>

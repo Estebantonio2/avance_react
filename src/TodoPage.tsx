@@ -26,10 +26,15 @@ const TodoPage = () => {
 
     }
 
+    const eliminarTODO = (indice: number) => {
+        listaPorHacer.splice(indice, 1);
+        setListaPorHacer([...listaPorHacer]);
+    }
+
     return <div className="container">
         <Encabezado titulo={nombreApp}/>
         <FormularioTODO onAgregarTODO={agregarTODO}/>
-        <ListaTODOs lista={listaPorHacer}/>
+        <ListaTODOs lista={listaPorHacer} onEliminarTODO={eliminarTODO}/>
         <Footer />
     </div>
 }
