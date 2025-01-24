@@ -10,7 +10,7 @@ const ListaTODOs = (props: ListaTODOsProps) => {
         <ul className="list-group" id="todos">
             {
                 props.lista.map((item: TODO, indice: number) => {
-                    return <li className="list-group-item" onClick={() => {
+                    return <li key={indice} className="list-group-item" onClick={() => {
                         props.onEliminarTODO(indice);
                     }}>{item.descripcion}</li>
                 })
